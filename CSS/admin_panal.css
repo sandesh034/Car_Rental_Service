@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .company-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .company-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .sidebar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar-item {
+    padding: 15px;
+  }
+
+  .sidebar-item a {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sidebar-item a:hover {
+    color: #fff;
+    background-color: #555;
+  }
+
+  .sidebar-text {
+    margin-left: 10px;
+  }
+
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .content-section {
+    display: none;
+  }
+
+  .content-section:first-child {
+    display: block;
+  }
+
+
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .striped-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .striped-table th,
+  .striped-table td {
+    padding: 8px;
+  }
+
+  .striped-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+
+  .striped-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .sidebar {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      padding: 10px;
+    }
+  }
+
+
+  /*reports*/
+  .report-card-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .report-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .report-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .report-description {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .report-left-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .report-right-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .report-description-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .report-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  .report-value {
+    margin-left: 5px;
+    color: #777;
+  }
+
+  .report-icon {
+    margin-right: 10px;
+    color: #777;
+  }
